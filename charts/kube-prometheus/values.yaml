@@ -1,0 +1,67 @@
+enableBackup: false
+kube-prometheus-stack:
+  grafana:
+    ingress:
+      enabled: true
+      ingressClassName: nginx
+    sidecar:
+      datasources:
+        defaultDatasourceEnabled: false
+    persistence:
+      enabled: true
+    serviceMonitor:
+      labels:
+        release: kube-prometheus-stack
+    grafana.ini:
+      # https://grafana.com/docs/grafana/latest/auth/github/#enable-github-in-grafana
+      auth.github:
+        enabled: true
+        allow_sign_up: true
+        scopes: user:email,read:org
+        auth_url: https://github.com/login/oauth/authorize
+        token_url: https://github.com/login/oauth/access_token
+        api_url: https://api.github.com/user
+        allowed_organizations: Cleerly # case sensitive
+        team_ids: "2576197" # cleerly-all
+  kubeControllerManager:
+    enabled: false # have no access for EKS
+  kubeScheduler:
+    enabled: false # have no access for EKS
+  kubeProxy:
+    enabled: false # bind to 127.0.0.1
+  prometheus-node-exporter:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 30Mi
+  prometheusOperator:
+    admissionWebhooks:
+      certManager:
+        enabled: true # cert-manager is required
+  prometheus:
+    ingress:
+      enabled: true
+      ingressClassName: nginx
+      annotations:
+        nginx.ingress.kubernetes.io/auth-type: basic
+        nginx.ingress.kubernetes.io/auth-secret: basic-auth # checkov:skip=CKV_SECRET_6:false positive
+        nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
+    prometheusSpec:
+      thanos:
+        version: v0.25.2 # must match `kube-prometheus-stack.prometheusOperator.thanosImage.tag`
+      storageSpec:
+        volumeClaimTemplate:
+          spec:
+            resources:
+              requests:
+                storage: 15Gi
+    thanosIngress:
+      enabled: true
+      ingressClassName: nginx-internal
+      annotations:
+        cert-manager.io/cluster-issuer: letsencrypt-staging
+        nginx.ingress.kubernetes.io/ssl-redirect: "true"
+        nginx.ingress.kubernetes.io/backend-protocol: GRPC
+      paths:
+        - /
+      pathType: ImplementationSpecific

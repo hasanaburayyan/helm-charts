@@ -1,0 +1,16 @@
+cert-manager:
+  installCRDs: true
+  prometheus:
+    servicemonitor:
+      enabled: false # cycle dependency on kube-prometheus-stack
+      labels:
+        release: kube-prometheus-stack
+  resources:
+    requests:
+      cpu: 10m
+      memory: 64Mi
+  webhook:
+    resources:
+      requests:
+        cpu: 10m
+        memory: 32Mi
