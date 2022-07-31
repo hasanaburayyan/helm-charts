@@ -18,6 +18,16 @@ entries:
   go-site:
   - apiVersion: v2
     appVersion: 0.2.0
+    created: "2022-07-31T20:42:27.555580041Z"
+    description: A Helm chart for Kubernetes
+    digest: 537a721bacadb4ada838ace32099ccbc6b884414e1fe0d9e76b73e99a1d0207b
+    name: go-site
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/go-site-0.3.0/go-site-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 0.2.0
     created: "2022-07-31T01:42:49.059937297Z"
     description: A Helm chart for Kubernetes
     digest: 1a4ff62ebf898f80516e028102151cab064aa01c015649154ccb0292c9fd7a40
