@@ -36,6 +36,21 @@ entries:
     urls:
     - https://github.com/hasanaburayyan/helm-charts/releases/download/go-site-0.1.0/go-site-0.1.0.tgz
     version: 0.1.0
+  ingress-nginx:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2022-07-31T17:44:20.798002167Z"
+    dependencies:
+    - name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.2.0
+    description: A Helm chart for Kubernetes
+    digest: ed895252ceee9085cba8959be187607efe559222e1112c3fcf96484f8f50c002
+    name: ingress-nginx
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/ingress-nginx-0.1.0/ingress-nginx-0.1.0.tgz
+    version: 0.1.0
   kube-prometheus:
   - apiVersion: v2
     appVersion: 1.16.0
