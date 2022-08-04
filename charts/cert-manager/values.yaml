@@ -2,7 +2,7 @@ cert-manager:
   installCRDs: true
   prometheus:
     servicemonitor:
-      enabled: false # cycle dependency on kube-prometheus-stack
+      enabled: true # cycle dependency on kube-prometheus-stack
       labels:
         release: kube-prometheus-stack
   resources:
