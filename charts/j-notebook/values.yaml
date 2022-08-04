@@ -1,4 +1,4 @@
-jupyterhub:
+hub:
   ingress:
     enabled: true
     annotations:
