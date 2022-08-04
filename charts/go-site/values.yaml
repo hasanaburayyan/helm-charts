@@ -48,12 +48,15 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: simple-site.sandbox.therealhasan.com
+    - host: go.sandbox.therealhasan.com
       paths:
         - path: /
           pathType: ImplementationSpecific
 
-  tls: []
+  tls: #[]
+    - hosts:
+      - go.sandbox.therealhasan.com
+      secretName: go-tls-secret
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local

@@ -1,4 +1,13 @@
 ingress-nginx:
   controller:
-    extraArgs:
-      enable-ssl-passthrough: true
+    ingressClassResource:
+      name: nginx-internal
+      controllerValue: k8s.io/ingress-nginx-internal
+    ingressClass: nginx-internal
+    service:
+      external:
+        enabled: false
+      internal:
+        enabled: true
+        annotations:
+          service.beta.kubernetes.io/aws-load-balancer-internal: "true"
