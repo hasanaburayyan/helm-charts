@@ -76,6 +76,24 @@ entries:
     version: 0.1.0
   kube-prometheus:
   - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2022-08-04T00:51:35.085062632Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 34.10.0
+    - condition: thanos.enabled
+      name: thanos
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.6
+    description: A Helm chart for Kubernetes
+    digest: 6b635fe1dd697c97a0b313812ad167ab013f0ab6e6100def82f22121f0229d0a
+    name: kube-prometheus
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/kube-prometheus-0.2.0/kube-prometheus-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2022-07-31T15:34:06.700424962Z"
     description: A Helm chart for Kubernetes
@@ -85,4 +103,4 @@ entries:
     urls:
     - https://github.com/hasanaburayyan/helm-charts/releases/download/kube-prometheus-0.1.0/kube-prometheus-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-31T01:06:04.502847393Z"
+generated: "2022-08-04T00:51:35.085086632Z"
