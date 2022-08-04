@@ -7,3 +7,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
+  tls:
+    - hosts:
+      - notebook.sandbox.therealhasan.com
+      secretName: notebook-tls-secret
