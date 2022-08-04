@@ -2,6 +2,20 @@ apiVersion: v1
 entries:
   cert-manager:
   - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-04T01:07:18.110994806Z"
+    dependencies:
+    - name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v1.7.1
+    description: A Helm chart for Kubernetes
+    digest: 5cd40cd515518299af47286d35c0baeb51b6e33471446a2a5704f62f5d4dcbed
+    name: cert-manager
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/cert-manager-0.5.0/cert-manager-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     appVersion: 0.0.0
     created: "2022-08-04T01:00:15.390664377Z"
     dependencies:
@@ -118,4 +132,4 @@ entries:
     urls:
     - https://github.com/hasanaburayyan/helm-charts/releases/download/kube-prometheus-0.1.0/kube-prometheus-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-04T01:00:15.390683477Z"
+generated: "2022-08-04T01:07:18.111284207Z"
