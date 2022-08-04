@@ -7,7 +7,7 @@ kube-prometheus-stack:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - grafana.mgmt.cleerlymedcloud.com
+        - grafana.sandbox.therealhasan.com
       tls:
         - secretName: grafana-sandbox-tls # checkov:skip=CKV_SECRET_6:false positive
           hosts:
