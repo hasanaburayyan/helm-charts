@@ -25,6 +25,7 @@ jobs:
           helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
           helm repo add kube-prometheus-stack https://prometheus-community.github.io/helm-charts
           helm repo add thanos https://charts.bitnami.com/bitnami
+          helm repo add cert-manager https://charts.jetstack.io
           helm repo update
 
       - name: Run chart-releaser
