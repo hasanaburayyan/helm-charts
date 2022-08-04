@@ -106,6 +106,20 @@ entries:
   jupyter-notebook:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-08-04T01:43:36.163333078Z"
+    dependencies:
+    - name: jupyterhub
+      repository: https://jupyterhub.github.io/helm-chart/
+      version: 1.2.0
+    description: A Helm chart for Kubernetes
+    digest: 6221d228881351cd914a6ff96eaa0d7efbfbd95a024771712c7dfc547261f392
+    name: jupyter-notebook
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/jupyter-notebook-0.4.0/jupyter-notebook-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-08-04T01:31:36.651743219Z"
     dependencies:
     - name: jupyterhub
@@ -179,4 +193,4 @@ entries:
     urls:
     - https://github.com/hasanaburayyan/helm-charts/releases/download/kube-prometheus-0.1.0/kube-prometheus-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-04T01:31:36.65179322Z"
+generated: "2022-08-04T01:43:36.163363579Z"
