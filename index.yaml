@@ -106,6 +106,20 @@ entries:
   jupyter-notebook:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-08-04T02:04:12.536406Z"
+    dependencies:
+    - name: jupyterhub
+      repository: https://jupyterhub.github.io/helm-chart/
+      version: 1.2.0
+    description: A Helm chart for Kubernetes
+    digest: 1fd55e638078046cbe7daa33aa99222364c40c78419b929051abae51497aa936
+    name: jupyter-notebook
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/jupyter-notebook-0.5.0/jupyter-notebook-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-08-04T01:43:36.163333078Z"
     dependencies:
     - name: jupyterhub
@@ -147,6 +161,24 @@ entries:
     - https://github.com/hasanaburayyan/helm-charts/releases/download/jupyter-notebook-0.2.0/jupyter-notebook-0.2.0.tgz
     version: 0.2.0
   kube-prometheus:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2022-08-04T02:04:12.77673637Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 34.10.0
+    - condition: thanos.enabled
+      name: thanos
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.6
+    description: A Helm chart for Kubernetes
+    digest: d87a5dcbcdbd3138aa586ba7c32803bd1241b30a305cf039ee444605467780ff
+    name: kube-prometheus
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/kube-prometheus-0.5.0/kube-prometheus-0.5.0.tgz
+    version: 0.5.0
   - apiVersion: v2
     appVersion: 0.0.0
     created: "2022-08-04T01:21:33.313336894Z"
@@ -193,4 +225,4 @@ entries:
     urls:
     - https://github.com/hasanaburayyan/helm-charts/releases/download/kube-prometheus-0.1.0/kube-prometheus-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-04T01:43:36.163363579Z"
+generated: "2022-08-04T02:04:12.776771771Z"
