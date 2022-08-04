@@ -103,7 +103,40 @@ entries:
     urls:
     - https://github.com/hasanaburayyan/helm-charts/releases/download/ingress-nginx-0.1.0/ingress-nginx-0.1.0.tgz
     version: 0.1.0
+  jupyter-notebook:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-04T01:21:32.084682055Z"
+    dependencies:
+    - name: jupyterhub
+      repository: https://jupyterhub.github.io/helm-chart/
+      version: 1.2.0
+    description: A Helm chart for Kubernetes
+    digest: ca345440896051efb880896d0d4f9faaf661aa90e7e5edc505e0ff9ad2b22552
+    name: jupyter-notebook
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/jupyter-notebook-0.2.0/jupyter-notebook-0.2.0.tgz
+    version: 0.2.0
   kube-prometheus:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2022-08-04T01:21:33.313336894Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 34.10.0
+    - condition: thanos.enabled
+      name: thanos
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.6
+    description: A Helm chart for Kubernetes
+    digest: 704d680a2460b12aebeeb56653659f79d8fbd06a5628af18f5a11a04f87336f7
+    name: kube-prometheus
+    type: application
+    urls:
+    - https://github.com/hasanaburayyan/helm-charts/releases/download/kube-prometheus-0.4.0/kube-prometheus-0.4.0.tgz
+    version: 0.4.0
   - apiVersion: v2
     appVersion: 0.0.0
     created: "2022-08-04T00:51:35.085062632Z"
@@ -132,4 +165,4 @@ entries:
     urls:
     - https://github.com/hasanaburayyan/helm-charts/releases/download/kube-prometheus-0.1.0/kube-prometheus-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-04T01:07:18.111284207Z"
+generated: "2022-08-04T01:21:33.313522195Z"
