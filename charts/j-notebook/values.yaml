@@ -1,14 +1,15 @@
 hub:
-  ingress:
-    enabled: true
-    annotations:
-      kubernetes.io/ingress.class: nginx
-    hosts:
-      - host: notebook.sandbox.therealhasan.com
-        paths:
-          - path: /
-            pathType: ImplementationSpecific
-    tls:
-      - hosts:
-          - notebook.sandbox.therealhasan.com
-        secretName: notebook-tls-secret
+  networkPolicy:
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: nginx
+      hosts:
+        - host: notebook.sandbox.therealhasan.com
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
+      tls:
+        - hosts:
+            - notebook.sandbox.therealhasan.com
+          secretName: notebook-tls-secret
