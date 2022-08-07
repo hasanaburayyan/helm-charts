@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17dea72a-7a39-4d5a-98a2-4ed2a3f1cbde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/charts/j-notebook/.helmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charts/j-notebook/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charts/j-notebook/values.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/go-site/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/go-site/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/ingress-nginx/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/ingress-nginx/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/j-notebook/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/j-notebook/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,23 +25,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/hasan/repos/k8-stuff/helm-charts/charts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hasan/repos/k8-stuff/helm-charts/charts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/charts" />
       <recent name="$PROJECT_DIR$/charts/go-site" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/archive" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -58,6 +57,9 @@
       <updated>1659228999646</updated>
       <workItem from="1659229000811" duration="1469000" />
       <workItem from="1659231603741" duration="16960000" />
+      <workItem from="1659570072770" duration="9791000" />
+      <workItem from="1659764395270" duration="675000" />
+      <workItem from="1659820002505" duration="33000" />
     </task>
     <servers />
   </component>
